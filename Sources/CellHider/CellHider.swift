@@ -13,7 +13,7 @@ public class CellHider {
     */
    public static func hide(table: UITableViewAndDataSource, indexPaths: [IndexPath], isHidden: Bool) {
       let indexPathItems: [IndexPathItem] = indexPaths.map { ($0, isHidden) }
-      setVisibility(table: table, indexPathItems: indexPathItems)
+      hide(table: table, indexPathItems: indexPathItems)
    }
    /**
     * Set many indicies to visible / hidden
@@ -24,7 +24,7 @@ public class CellHider {
       let indexPaths: [IndexPathItem] = items.flatMap { item in
          item.indexPaths.map { ($0, item.isHidden) }
       }
-      setVisibility(table: table, indexPathItems: indexPaths)
+      hide(table: table, indexPathItems: indexPaths)
    }
    /**
     * Show / hide cells
