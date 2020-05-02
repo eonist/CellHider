@@ -13,7 +13,7 @@ extension TableView {
     * On cell-tap
     */
    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      CellHider.setVisibility(table: self, indexPaths: [indexPath], isHidden: true) // hides cells you click
+      CellHider.hide(table: self, indexPaths: [indexPath], isHidden: true) // hides cells you click
    }
    /**
     * Returns the height of each cell
