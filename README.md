@@ -1,4 +1,4 @@
-# CellHider
+# CellHider 🙈
 Hide cells in UITableView
 
 ### Installation:
