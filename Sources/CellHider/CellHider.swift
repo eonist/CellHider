@@ -11,7 +11,7 @@ public class CellHider {
     * ## Examples:
     * hide(table: self, items: [], isHidden: true)
     */
-   public static func setVisibility(table: UITableViewAndDataSource, indexPaths: [IndexPath], isHidden: Bool) {
+   public static func hide(table: UITableViewAndDataSource, indexPaths: [IndexPath], isHidden: Bool) {
       let indexPathItems: [IndexPathItem] = indexPaths.map { ($0, isHidden) }
       setVisibility(table: table, indexPathItems: indexPathItems)
    }
@@ -20,7 +20,7 @@ public class CellHider {
     * ## Examples:
     * hide(table: self, items: [([], false), ([], true)])
     */
-   public static func setVisibility(table: UITableViewAndDataSource, items: IndexPathItems) {
+   public static func hide(table: UITableViewAndDataSource, items: IndexPathItems) {
       let indexPaths: [IndexPathItem] = items.flatMap { item in
          item.indexPaths.map { ($0, item.isHidden) }
       }
@@ -29,7 +29,7 @@ public class CellHider {
    /**
     * Show / hide cells
     */
-   public static func setVisibility(table: UITableViewAndDataSource, indexPathItems: [IndexPathItem]) {
+   public static func hide(table: UITableViewAndDataSource, indexPathItems: [IndexPathItem]) {
       UIView.setAnimationsEnabled(false) // Animations don't look good when you hide and show etc
       indexPathItems.forEach {
          table.cellForRow(at: $0.indexPath)?.isHidden = $0.isHidden
