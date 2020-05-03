@@ -25,3 +25,6 @@ extension TableView {
    }
 }
 ```
+
+### Fun fact:
+- An alternative name idea for this repo was: "peek-a-boo"
