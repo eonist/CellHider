@@ -7,7 +7,10 @@ public class CellHider {
    /**
     * Set visibility for indicies
     * - Note: when you only need to "hide or show" something and not "hide and show" something
-    *
+    * - Parameters:
+    *   - table: The table that holds the cells
+    *   - indexPaths: The row-index, column-index locations of the cells
+    *   - isHidden: make cells hidden or shown
     * ## Examples:
     * hide(table: self, items: [], isHidden: true)
     */
@@ -17,6 +20,9 @@ public class CellHider {
    }
    /**
     * Set many indicies to visible / hidden
+    * - Parameters:
+    *   - table: The table that holds the cells
+    *   - items: A way to group many arrays like: [([IndexPath], isHidden)]
     * ## Examples:
     * hide(table: self, items: [([], false), ([], true)])
     */
@@ -28,6 +34,9 @@ public class CellHider {
    }
    /**
     * Show / hide cells
+    * - Parameters:
+    *   - table: The table that holds the cells
+    *   - indexPathItems a way to group items like: ([IndexPath], isHidden)
     */
    public static func hide(table: UITableViewAndDataSource, indexPathItems: [IndexPathItem]) {
       UIView.setAnimationsEnabled(false) // Animations don't look good when you hide and show etc
