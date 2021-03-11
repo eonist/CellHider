@@ -1,5 +1,5 @@
 [![codebeat badge](https://codebeat.co/badges/5d6d240e-3123-43d4-94f5-cb34ed074d7e)](https://codebeat.co/projects/github-com-passbook-cellhider-master)
-[![Swift](https://github.com/sentryco/CellHider/actions/workflows/swift.yml/badge.svg)](https://github.com/sentryco/CellHider/actions/workflows/swift.yml)
+[![Tests](https://github.com/sentryco/CellHider/actions/workflows/Tests.yml/badge.svg)](https://github.com/sentryco/CellHider/actions/workflows/Tests.yml)
 
 # CellHider 🙈
 Hide cells in UITableView
