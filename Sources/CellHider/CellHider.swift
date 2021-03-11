@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 /**
  * A helper class that helps to hide items in a section based tableview
@@ -48,3 +49,4 @@ public class CellHider {
       UIView.setAnimationsEnabled(true)
    }
 }
+#endif

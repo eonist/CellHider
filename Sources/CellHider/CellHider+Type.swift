@@ -1,3 +1,4 @@
+#if os(iOS)
 import UIKit
 
 extension CellHider {
@@ -5,3 +6,4 @@ extension CellHider {
    public typealias IndexPathItems = [(indexPaths: [IndexPath], isHidden: Bool)]
    public typealias UITableViewAndDataSource = UITableView & UITableViewDataSource
 }
+#endif
